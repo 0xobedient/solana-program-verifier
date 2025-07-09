@@ -11,7 +11,12 @@
     "type": "git",
     "url": "git+https://github.com/0xobedient/solana-program-verifier.git"
   },
-  "keywords": [],
+  "keywords": [
+    "solana",
+    "verifier",
+    "verify-program",
+    "program"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {

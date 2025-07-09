@@ -1,5 +1,6 @@
 import {
   GetProgramVerificationStatusParams,
+  GetProgramVerificationStatusResponse,
   handleError,
   OSEC_ENDPOINT_URI,
   OSEC_ROUTER,
@@ -7,7 +8,7 @@ import {
 
 export async function get_program_verification_status({
   address,
-}: GetProgramVerificationStatusParams) {
+}: GetProgramVerificationStatusParams): Promise<GetProgramVerificationStatusResponse> {
   try {
     const response = await fetch(
       OSEC_ENDPOINT_URI + OSEC_ROUTER.GET_PROGRAM_VERIFICATION_STATUS + address
