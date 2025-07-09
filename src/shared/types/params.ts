@@ -1,0 +1,33 @@
+export type VerifyParams = {
+  program_id: string;
+  repository: string;
+  commit_hash?: string;
+  base_image?: string;
+  bpf_flag?: boolean;
+  cargo_args?: string[];
+  lib_name?: string;
+  mount_path?: string;
+};
+
+export type VerifySyncParams = {
+  program_id: string;
+  repository: string;
+  commit_hash?: string;
+  base_image?: string;
+  bpf_flag?: boolean;
+  cargo_args?: string[];
+  lib_name?: string;
+  mount_path?: string;
+};
+
+export type GetProgramVerificationStatusParams = {
+  address: string;
+};
+
+export type GetVerificationJobStatusParams = {
+  job_id: string;
+};
+
+export type GetProgramBuildLogParams = {
+  address: string;
+};
