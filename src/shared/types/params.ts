@@ -1,6 +1,6 @@
 import BN from "bn.js";
 
-export type VerifyParams = {
+export type CreateVerificationPdaParams = {
   version: string;
   gitUrl: string;
   commit: string;
@@ -8,7 +8,7 @@ export type VerifyParams = {
   deploySlot: BN;
 };
 
-export type CheckVerifyParams = {
+export type VerifyParams = {
   program_id: string;
   repository: string;
   commit_hash: string;

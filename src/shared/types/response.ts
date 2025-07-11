@@ -29,12 +29,12 @@ export type GetVerificationJobStatusResponse = {
   repo_url: string;
 };
 
-export type VerifyProgramResponse = {
+export type CreateVerificatoinPdaResponse = {
   tx: string;
   pda: string;
 };
 
-export type CheckVerifyProgramResponse =
+export type VerifyProgramResponse =
   | {
       status: string;
       request_id: string;
@@ -42,7 +42,7 @@ export type CheckVerifyProgramResponse =
     }
   | { status: string; error: string; message: string };
 
-export type DecodeAccountDataResponse = {
+export type DecodeVerificationPdaDataResponse = {
   address: string;
   signer: string;
   version: string;

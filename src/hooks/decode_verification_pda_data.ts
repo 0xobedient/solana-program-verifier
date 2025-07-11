@@ -1,7 +1,7 @@
 import bs58 from "bs58";
-import { DecodeAccountDataResponse, handleError } from "../shared";
+import { DecodeVerificationPdaDataResponse, handleError } from "../shared";
 
-export function decode_account_data(hex: string): DecodeAccountDataResponse {
+export function decode_verification_pda_data(hex: string): DecodeVerificationPdaDataResponse {
   try {
     const buffer = Buffer.from(hex, "hex");
 

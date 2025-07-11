@@ -1,6 +1,6 @@
 import { Connection, Keypair } from "@solana/web3.js";
 import {
-  check_verify_program,
+  create_verification_pda,
   get_program_build_log,
   get_program_verification_status,
   get_verification_job_status,
@@ -8,7 +8,7 @@ import {
   verify_program,
 } from "../hooks";
 import {
-  CheckVerifyParams,
+  CreateVerificationPdaParams,
   GetProgramBuildLogParams,
   GetProgramVerificationStatusParams,
   GetVerificationJobStatusParams,
@@ -19,8 +19,12 @@ import { IVerifer } from "./IVerifier";
 export class Verifier implements IVerifer {
   constructor() {}
 
-  public async checkVerifyProgram(params: CheckVerifyParams) {
-    return check_verify_program(params);
+  public async createVerificationPda(
+    connection: Connection,
+    keypair: Keypair,
+    programId: string,
+    params: CreateVerificationPdaParams) {
+    return create_verification_pda(connection, keypair, programId, params);
   }
 
   public async getProgramBuildLog(params: GetProgramBuildLogParams) {
@@ -44,11 +48,8 @@ export class Verifier implements IVerifer {
   }
 
   public async verifyProgram(
-    connection: Connection,
-    keypair: Keypair,
-    programId: string,
     params: VerifyParams
   ) {
-    return verify_program(connection, keypair, programId, params);
+    return verify_program(params);
   }
 }
