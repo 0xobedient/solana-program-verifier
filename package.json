@@ -1,6 +1,6 @@
 {
   "name": "@0xobedient/solana-program-verifier",
-  "version": "0.0.1",
+  "version": "0.0.1-test",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
