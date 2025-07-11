@@ -1,6 +1,6 @@
-# 🚀 @0xobedient-DexScreener-SDK
+# 🚀 @0xobedient-Solana-Program-Verifier
 
-**@0xobedient-DexScreener-SDK**
+**@0xobedient-Solana-Program-Verifier**
 
 > A Powerful Typescript SDK for verify Solana Program, Delivering effortless access to Solana Program verify information, Verifing Job status, Verified Programs information, Decode Solana Program Verification PDA data, Create Verification PDA and Verify Solana Program. in a structured and type-safe way. 
 
