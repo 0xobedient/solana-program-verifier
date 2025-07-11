@@ -1,0 +1,15 @@
+{
+  "name": "solana-program-verifier-example",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "scripts": {
+    "dev": "npx ts-node -r tsconfig-paths/register ./index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@0xobedient/solana-program-verifier": "^0.0.1-test"
+  }
+}
